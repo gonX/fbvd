@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.Start = new System.Windows.Forms.Button();
@@ -39,16 +40,16 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(12, 29);
+			this.textBox1.Location = new System.Drawing.Point(12, 25);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(244, 20);
+			this.textBox1.Size = new System.Drawing.Size(349, 20);
 			this.textBox1.TabIndex = 0;
 			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(12, 13);
+			this.label1.Location = new System.Drawing.Point(9, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(77, 13);
 			this.label1.TabIndex = 1;
@@ -56,9 +57,9 @@
 			// 
 			// Start
 			// 
-			this.Start.Location = new System.Drawing.Point(108, 222);
+			this.Start.Location = new System.Drawing.Point(236, 200);
 			this.Start.Name = "Start";
-			this.Start.Size = new System.Drawing.Size(65, 28);
+			this.Start.Size = new System.Drawing.Size(125, 50);
 			this.Start.TabIndex = 2;
 			this.Start.Text = "Start";
 			this.Start.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(108, 144);
+			this.button2.Location = new System.Drawing.Point(21, 200);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(65, 50);
+			this.button2.Size = new System.Drawing.Size(209, 50);
 			this.button2.TabIndex = 3;
 			this.button2.Text = "Save To...";
 			this.button2.UseVisualStyleBackColor = true;
@@ -85,28 +86,28 @@
 			// 
 			// webBrowser1
 			// 
-			this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Right;
-			this.webBrowser1.Location = new System.Drawing.Point(191, 0);
+			this.webBrowser1.Location = new System.Drawing.Point(341, 174);
 			this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
 			this.webBrowser1.Name = "webBrowser1";
-			this.webBrowser1.Size = new System.Drawing.Size(93, 262);
+			this.webBrowser1.Size = new System.Drawing.Size(20, 20);
 			this.webBrowser1.TabIndex = 5;
 			this.webBrowser1.Visible = false;
 			this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
 			// 
-			// Form1
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 262);
+			this.ClientSize = new System.Drawing.Size(373, 262);
 			this.Controls.Add(this.webBrowser1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.Start);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Name = "MainForm";
+			this.Text = "fbvd - Facebook Video Downloader";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
