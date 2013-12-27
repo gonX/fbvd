@@ -5,17 +5,17 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
-using FacebookVideoDownloader.Properties;
+using fbvd.Properties;
 
-namespace FacebookVideoDownloader
+namespace fbvd
 {
-	public sealed partial class Form1 : Form
+	public sealed partial class MainForm : Form
 	{
 		private bool _facebookok;
 		private bool _fileok;
 		private readonly Regex _rx = new Regex("video_data\":\\[({.*?})\\]");
 
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
 			Start.Enabled = false;
